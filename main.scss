@@ -47,6 +47,13 @@
   }
 }
 
+@mixin mobile {
+  @media (max-width: $mobile) {
+    // https://sass-lang.com/documentation/at-rules/mixin#content-blocks
+    @content;
+  }
+}
+
 body {
   background: $primary-color;
   color: $text-color;
@@ -82,6 +89,10 @@ body {
     &:hover {
       color: pink;
     }
+  }
+
+  @include mobile {
+    flex-direction: column;
   }
 }
 
