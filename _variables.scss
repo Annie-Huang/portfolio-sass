@@ -1,0 +1,7 @@
+// Use scss variable has 100% compatibility with browsers because it's inputting the variable value (check the main.css file).
+// while css variable is still not 100% browser compatible.
+$primary-color: #272727;
+$accent-color: #ff652f;
+$text-color: #fff;
+// https://sass-lang.com/documentation/values/maps
+$font-weights: ("regular": 400, "medium": 500, "bold": 700);
