@@ -22,8 +22,22 @@
 @import "./resets";
 @import "./variables";
 
+// Function is supposed to use to compute values and return values.
 @function weight($weight-name) {
   @return map-get($font-weights, $weight-name);
+}
+
+// Mixin is use for defining styles
+//@mixin flexCenter {
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//}
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
 }
 
 body {
@@ -32,6 +46,8 @@ body {
 }
 
 .main {
+  //@include flexCenter;
+  @include flexCenter(row);
   width: 80%;
   margin: 0 auto;
 
