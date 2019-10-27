@@ -1,0 +1,5 @@
+https://www.youtube.com/watch?v=_a5j7KoflTs
+https://github.com/codeSTACKr/portfolio-sass
+https://www.jetbrains.com/help/idea/transpiling-sass-less-and-scss-to-css.html
+
+https://sass-lang.com/documentation/values/maps
