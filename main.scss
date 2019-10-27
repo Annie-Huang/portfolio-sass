@@ -45,5 +45,9 @@ body {
   // this only actually output what we want: ".main .main__paragraph"
   #{&}__paragraph {
     font-weight: map-get($font-weights, bold);
+
+    &:hover {
+      color: pink;
+    }
   }
 }
