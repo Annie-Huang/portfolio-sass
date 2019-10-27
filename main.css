@@ -100,14 +100,25 @@
 .nav .menu-nav.open {
   transform: translateY(0);
 }
-.nav__item {
+.nav .menu-nav__item {
   transform: translateX(100vw);
   transition: all 0.5s ease-in-out;
 }
-.nav__item.open {
+.nav .menu-nav__item.open {
   transform: translateX(0);
 }
-.nav__item.active > a {
+.nav .menu-nav__item.active > a {
+  color: #ff652f;
+}
+.nav .menu-nav__link {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  font-weight: 300;
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav__link:hover {
   color: #ff652f;
 }
 
