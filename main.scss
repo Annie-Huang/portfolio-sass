@@ -40,6 +40,13 @@
   flex-direction: $direction;
 }
 
+@mixin theme($light-theme: true) {
+  @if($light-theme) {
+    background: lighten($primary-color, 100%);
+    color: darken($text-color, 100%);
+  }
+}
+
 body {
   background: $primary-color;
   color: $text-color;
@@ -76,4 +83,12 @@ body {
       color: pink;
     }
   }
+}
+
+// When $light-theme is false, the whole if condition is not going to apply
+// meaning nothing is going to be add inside .light class. The compiler will auto remove empty class
+// very smart way to save space.
+.light {
+  @include theme($light-theme: false);
+  // Or you can just type @include theme(true);
 }
