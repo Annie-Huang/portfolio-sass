@@ -81,13 +81,30 @@ body {
   //  font-weight: map-get($font-weights, bold);
   //}
 
-  // this only actually output what we want: ".main .main__paragraph"
-  #{&}__paragraph {
+  //// this only actually output what we want: ".main .main__paragraph"
+  //#{&}__paragraph {
+  //  //font-weight: map-get($font-weights, bold);
+  //  font-weight: weight(bold);
+  //
+  //  &:hover {
+  //    color: pink;
+  //  }
+  //}
+
+  #{&}__paragraph1 {
     //font-weight: map-get($font-weights, bold);
     font-weight: weight(bold);
 
     &:hover {
       color: pink;
+    }
+  }
+  // This will do .main .main__paragraph1, .main .main__paragraph2 {..}
+  // Very smart, I like SASS compiler.
+  #{&}__paragraph2 {
+    @extend .main__paragraph1;
+    &:hover {
+      color: $accent-color;
     }
   }
 
