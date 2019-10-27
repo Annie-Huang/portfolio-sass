@@ -4,3 +4,5 @@ https://www.jetbrains.com/help/idea/transpiling-sass-less-and-scss-to-css.html
 
 https://sass-lang.com/documentation/values/maps
 https://sass-lang.com/documentation
+
+https://fontawesome.com/kits
