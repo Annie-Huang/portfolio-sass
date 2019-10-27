@@ -20,5 +20,30 @@ $font-weights: ("regular": 400, "medium": 500, "bold": 700);
 body {
   background: $primary-color;
   color: $text-color;
-  font-weight: map-get($font-weights, bold);
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+
+  // // It also doesn't put your comment into the output css. Good result!
+  //p {
+  //  font-weight: map-get($font-weights, bold);
+  //}
+
+  // this output ".main .main__paragraph"
+  //.main__paragraph {
+  //  font-weight: map-get($font-weights, bold);
+  //}
+
+  // Better shortcut:
+  // this only output ".main__paragraph"
+  //&__paragraph {
+  //  font-weight: map-get($font-weights, bold);
+  //}
+
+  // this only actually output what we want: ".main .main__paragraph"
+  #{&}__paragraph {
+    font-weight: map-get($font-weights, bold);
+  }
 }
