@@ -21,8 +21,8 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@import "./resets";
-@import "./variables";
+@import "resets-basic-concept";
+@import "variables-basic-concept";
 
 // Function is supposed to use to compute values and return values.
 @function weight($weight-name) {
