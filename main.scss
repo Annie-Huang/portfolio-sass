@@ -1,3 +1,5 @@
+// !!!! SASS documentation: https://sass-lang.com/documentation
+
 // // CSS variables
 //:root {
 //  --primary-color: #272727;
@@ -62,7 +64,15 @@ body {
 .main {
   //@include flexCenter;
   @include flexCenter(row);
-  width: 80%;
+
+  //width: 80%;
+  // The following will output: "  width: calc(80% - 40%);"
+  //width: calc(80% - 40%);
+  // In SASS, we don't need to keyword calc to do calculation.
+  // But you cannot mix the type, e.g. you can do "calc(80%-400px)" but you cannot just do "80%-400px"
+  // The following will output: "  width: 40%;"
+  width: 80% - 40%;
+
   margin: 0 auto;
 
   // // It also doesn't put your comment into the output css. Good result!
