@@ -85,4 +85,18 @@
       transform: translateY(0);
     }
   }
+
+  // This makes the item slide into the page from the right.
+  &__item {
+    transform: translateX(100vw);
+    @include trasition-ease;
+
+    &.open {
+      transform: translateX(0);
+    }
+
+    &.active > a {
+      color: $secondary-color;
+    }
+  }
 }
