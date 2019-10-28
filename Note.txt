@@ -6,3 +6,12 @@ https://sass-lang.com/documentation/values/maps
 https://sass-lang.com/documentation
 
 https://fontawesome.com/kits
+
+Deployment:
+Go to repo
+-> Go to setting. https://github.com/Annie-Huang/portfolio-sass/settings
+-> Under "GitHub Pages", select the first dropdown to master branch
+
+Then it will say
+"Your site is ready to be published at https://annie-huang.github.io/portfolio-sass/."
+So it is live in the internet now.
